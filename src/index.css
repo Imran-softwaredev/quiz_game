@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --poppins: "Twemoji Country Flags", "Poppins", serif;
+  --inter: "Twemoji Country Flags", "Inter", serif;
+
+  font-family: var(--poppins);
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: gray;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
