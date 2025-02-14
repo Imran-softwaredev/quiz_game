@@ -1,12 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export interface ContainerProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-function Container({ children, className }: ContainerProps) {
+const Container: React.FC<ContainerProps> = ({ children, className }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,6 +12,6 @@ function Container({ children, className }: ContainerProps) {
       {children}
     </motion.div>
   );
-}
+};
 
 export default Container;

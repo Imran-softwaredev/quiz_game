@@ -1,10 +1,5 @@
 import React from "react";
 
-export interface DividerProps {
-  text?: string;
-  className?: string;
-}
-
 const Divider: React.FC<DividerProps> = ({ text, className = "" }) => {
   return (
     <div className="flex items-center gap-2 my-2">

@@ -1,10 +1,10 @@
-interface ListItem {
-  key: React.Key;
+export interface ListItem {
+  key: number | string;
   icon?: React.ReactNode;
   content: React.ReactNode;
 }
 
-interface ListProps {
+export interface ListProps {
   items: ListItem[];
   className?: string;
 }

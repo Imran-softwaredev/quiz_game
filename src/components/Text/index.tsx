@@ -11,7 +11,7 @@ export interface TextProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const textVariants = {
-  h1: "sm:text-4xl text-3xl", // Larger on mobile, even larger on desktop
+  h1: "sm:text-4xl text-3xl",
   h2: "sm:text-3xl text-2xl",
   h3: "sm:text-2xl text-xl",
   h4: "sm:text-xl text-lg",

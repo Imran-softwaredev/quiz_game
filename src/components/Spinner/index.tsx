@@ -1,12 +1,4 @@
 import React from "react";
-import { cn } from "@utils/index.utils";
-
-export interface SpinnerPropsT {
-  size?: "extra-small" | "small" | "medium" | "large" | "extra-large";
-  color?: string;
-  fill?: string;
-  className?: string;
-}
 
 const sizeClasses: Record<NonNullable<SpinnerPropsT["size"]>, string> = {
   "extra-small": "w-4 h-4",

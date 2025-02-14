@@ -45,7 +45,7 @@ const Result: React.FC = () => {
             </div>
             <div className="flex-1 border overflow-y-auto pt-4 pb-4 rounded-md min-h-[50vh]">
               <List
-                items={state.answers.map((item: any, index: number) => ({
+                items={state.answers.map((item: QuizItem, index: number) => ({
                   key: index,
                   icon: isCorrect(item) ? (
                     <ShowCorrectIcon />

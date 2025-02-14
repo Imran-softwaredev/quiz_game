@@ -1,12 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { CardProps } from "@/types/card";
 
-export interface CardProps {
-  children?: React.ReactNode;
-  className?: string;
-}
-
-function Card({ children, className }: CardProps) {
+const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -17,6 +13,6 @@ function Card({ children, className }: CardProps) {
       {children}
     </motion.div>
   );
-}
+};
 
 export default Card;

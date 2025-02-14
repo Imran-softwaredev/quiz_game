@@ -4,21 +4,6 @@ import Text from "@/components/Text";
 import SpinnerLoader from "@components/Spinner";
 import { cn } from "@/utils/index.utils";
 
-export interface ButtonProps {
-  type?: "button" | "submit" | "reset";
-  label: string;
-  onClick: () => void;
-  testId?: string;
-  className?: string;
-  variant?: "primary" | "secondary" | "danger";
-  disabled?: boolean;
-  icon?: React.ReactNode;
-  loading?: boolean;
-  iconPosition?: "left" | "right";
-  labelClassName?: string;
-  loadingProps?: Record<string, any>;
-}
-
 const Button: React.FC<ButtonProps> = ({
   type = "button",
   label,

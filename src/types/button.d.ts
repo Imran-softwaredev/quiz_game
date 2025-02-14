@@ -5,6 +5,7 @@ interface ButtonProps {
   className?: string;
   value?: string;
   testId?: string;
+  text?: string;
   variant?: "primary" | "secondary" | "danger";
   disabled?: boolean;
   icon?: React.ReactNode;

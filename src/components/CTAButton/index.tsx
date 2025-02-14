@@ -1,14 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-export interface CTAButtonProps {
-  onClick: () => void;
-  text: string;
-  disabled?: boolean;
-  className?: string;
-}
-
-function CTAButton({ onClick, text, className, disabled }: CTAButtonProps) {
+function CTAButton({ onClick, text, className, disabled }: ButtonProps) {
   return (
     <motion.button
       className={`rounded-md w-full md:w-auto h-12 px-4 flex items-center justify-center gap-2 transition-all duration-200 ${className}`}

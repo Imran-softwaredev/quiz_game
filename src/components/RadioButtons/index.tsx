@@ -2,18 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CrossIcon, TickIcon } from "@/icons";
 
-export interface RadioButtonItem {
-  id: number;
-  value: string;
-  label: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-export interface RadioButtonsProps {
-  items: RadioButtonItem[];
-  selectedValue: string;
-}
-
 const RadioButtons: React.FC<RadioButtonsProps> = ({
   items,
   selectedValue,
